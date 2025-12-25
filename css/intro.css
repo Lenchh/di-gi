@@ -4,23 +4,23 @@
     position: relative;
     margin: 0 auto;
     height: 668px;
-}
-
-.background-image {
-    width: 100%;
-    height: 668px;
+    background-image: url("../images/intro/bg-img.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .title-container {
     display: flex;
-    position: absolute;
-    top: 107px;
-    max-width: 886px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    max-width: 886px;
+    margin: 0 auto;
 }
 
 .title {
@@ -42,16 +42,14 @@
     line-height: 26px;
     color: #FFFFFF;
     margin: 0;
-    padding-top: 18px;
+    padding: 10px;
 }
 
 .intro-line {
     display: none;
     width: 61.05px;
     height: 8px;
-    margin: 0 auto;
-    position: absolute;
-    top: 135px;
+    margin: 10px auto;
     background-color: #4A4A4A;
 }
 
@@ -61,19 +59,16 @@
     border-radius: 3px;
     border: 1px #2B4074;
     background-color: #2B4074;
-    position: absolute;
-    top: 405px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0%;
     text-transform: uppercase;
-    text-align: center;
     color: #F9F6E5;
-    padding: 0;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-read-more:hover {
@@ -84,11 +79,6 @@
 .pagination-intro {
     width: 100px;
     height: 12px;
-    position: absolute;
-    top: 578px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -148,28 +138,14 @@
         max-width: 587px;
         font-size: 18px;
         line-height: 20px;
-        padding-top: 55px;
     }
 
     .title-container {
-        top: 80px;
         max-width: 588px;
     }
 
     .intro {
         height: 618px;
-    }
-
-    .background-image {
-        height: 618px;
-    }
-
-    .button-read-more {
-        top: 366px;
-    }
-
-    .pagination-intro {
-        top: 528px;
     }
 
     .oval {
@@ -205,28 +181,14 @@
         max-width: 560px;
         font-size: 15px;
         line-height: 20px;
-        padding-top: 25px;
     }
 
     .title-container {
-        top: 87px;
         max-width: 589px;
     }
 
     .intro {
         height: 465px;
-    }
-
-    .background-image {
-        height: 465px;
-    }
-
-    .button-read-more {
-        top: 303px;
-    }
-
-    .pagination-intro {
-        top: 403px;
     }
 
     .previous-arrow {
@@ -244,23 +206,10 @@
     }
 
     .intro-line {
-        top: 125px;
         display: block;
     }
 
-    .button-read-more {
-        top: 250px;
-    }
-
-    .pagination-intro {
-        top: 340px;
-    }
-
     .intro {
-        height: 386px;
-    }
-
-    .background-image {
         height: 386px;
     }
 
@@ -285,25 +234,12 @@
         display: none;
     }
 
-    .intro-line {
-        display: block;
-    }
-
     .title-container {
-        top: 36px;
         max-width: 320px;
     }
 
     .intro {
         height: 193px;
-    }
-
-    .background-image {
-        height: 193px;
-    }
-
-    .intro-line {
-        top: 84px;
     }
 
     .button-read-more {

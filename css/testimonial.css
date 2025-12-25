@@ -17,12 +17,11 @@
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    margin: 0 auto;
 }
 
 .testimonial-content-citation {
     margin: 0;
-    padding: 44px 20px 30px 20px;
+    padding: 44px 5px 30px;
     text-align: center;
     font-weight: 400;
     font-size: 36px;
@@ -44,7 +43,7 @@
     text-align: center;
     color: #4A4A4A;
     margin: 0;
-    padding: 0 10px 80px 10px;
+    padding: 0 10px 80px;
 }
 
 .testimonial-content .pagination-testimonial {
@@ -81,7 +80,6 @@
 
     .citation-author {
         font-size: 20px;
-
     }
 }
 
@@ -95,7 +93,7 @@
     }
 
     .testimonial-content-citation {
-        padding: 100px 20px 40px 20px;
+        padding: 100px 5px 40px;
     }
 
     .citation-author {
@@ -105,7 +103,7 @@
 
 @media screen and (max-width:640px) {
     .testimonial-content-citation {
-        padding: 40px 100px 40px 100px;
+        padding: 40px 100px 40px;
     }
 }
 

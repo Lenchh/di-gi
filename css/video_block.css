@@ -5,34 +5,36 @@
 .video-block {
     max-width: 1440px;
     width: 100%;
-    position: relative;
     margin: 0 auto;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
 }
 
 .video-block-content {
     display: flex;
+    justify-content: space-around;
+    width: 80%;
     padding-top: 80px;
     padding-bottom: 70px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 95%;
+    gap: 50px;
 }
 
 .content-img {
-    max-width: 470px;
-    max-height: 430px;
     width: 50%;
     border-radius: 4px;
+    margin: 0 10px 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .content-text {
     width: 60%;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 100px;
+    justify-content: space-between;
     text-align: left;
+    gap: 20px;
 }
 
 .text-title {
@@ -48,7 +50,7 @@
     width: 113.48px;
     height: 8px;
     background-color: #2B4074;
-    margin: 30px 0 0 0;
+    margin: 0;
 }
 
 .text-description {
@@ -58,7 +60,6 @@
     letter-spacing: 0;
     color: #9B9B9B;
     margin: 0;
-    padding-top: 39px;
 }
 
 .button-watch-video {
@@ -68,37 +69,23 @@
     border: 1px #2B4074;
     background-color: #2B4074;
     color: #F9F6E5;
-    margin: 48px 0 0 0;
-    padding: 21px 38px;
+    margin: 0;
+    padding: 20px 30px;
     cursor: pointer;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 @media screen and (max-width:1024px) {
-    .content-img {
-        max-width: 395px;
-        max-height: 380px;
+    .video-block-content {
+        width: 95%;
     }
-
-    .content-text {
-        margin-left: 60px;
-    }
-
-    .text-title-line {
-        margin-top: 15px;
-    }
-
-    .text-description {
-        padding-top: 19px;
-    }
-
-    .button-watch-video {
-        margin: 13px 0 0 0;
-    }
-
 }
 
 @media screen and (max-width:768px) {
@@ -120,11 +107,6 @@
 
     .text-title-line {
         width: 88.64px;
-        margin-top: 20px;
-    }
-
-    .content-text {
-        margin-left: 34px;
     }
 
     .text-description {
@@ -132,7 +114,7 @@
     }
 
     .button-watch-video {
-        margin: 30px -70px;
+        margin: 10px -70px;
     }
 }
 
@@ -144,25 +126,19 @@
     }
 
     .content-img {
-        max-width: 520px;
-        max-height: 478px;
-        width: 100%;
+        max-width: none;
+        max-height: none;
+        width: 80%;
     }
 
     .content-text {
-        margin: 40px auto 0 auto;
         align-items: center;
         width: 100%;
     }
 
     .text-description {
         line-height: 18px;
-        padding-top: 40px;
         text-align: center;
-    }
-
-    .button-watch-video {
-        margin: 56px auto 0 auto;
     }
 }
 
@@ -170,12 +146,6 @@
     .video-block-content {
         padding-top: 20px;
         padding-bottom: 40px;
-    }
-
-    .content-img {
-        max-width: 281.08px;
-        max-height: 243.88px;
-        width: 100%;
     }
 
     .text-title {

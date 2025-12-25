@@ -5,9 +5,11 @@
 .footer {
     max-width: 1440px;
     width: 100%;
-    position: relative;
-    margin: 53px auto 0 auto;
+    margin: 50px auto 0;
     background-color: #2B4074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .watch-button {
@@ -17,7 +19,7 @@
     background-color: #2B4074;
     margin: 0 auto;
     position: relative;
-    top: -30px;
+    top: -20px;
     text-align: center;
 }
 
@@ -28,22 +30,30 @@
     padding-bottom: 5px;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    align-self: center;
+    width: 90%;
+    padding: 30px 5px 70px;
+}
+
 .footer-content-text {
-    max-width: 751px;
-    padding: 158px 5px 0 150px;
+    padding: 5px;
     margin: 0;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 2px;
-
+    width: 90%;
 }
 
 .footer-content-social {
-    max-width: 1141px;
-    width: 80%;
-    margin: 80px auto 0 auto;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +66,7 @@
     height: 63px;
     text-align: center;
     border-right: 1px #7EBF84 solid;
-    padding: 29px 0 20px 0;
+    padding: 29px 0 20px;
 }
 
 .last-social-item {
@@ -64,17 +74,15 @@
 }
 
 .footer-content-widgets {
-    max-width: 1096px;
     width: 90%;
-    margin: 60px auto 0 auto;
-    padding-bottom: 5px;
     display: flex;
+    justify-content: flex-start;
 }
 
 .widgets-item {
     width: 25%;
     margin: 0;
-    padding-right: 50px;
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
 
@@ -98,23 +106,19 @@
     color: #FFFFFF;
 }
 
-.widgets-item-text,
-.widgets-item-text:visited,
-.button-back-to-top-text,
-.button-back-to-top-text:visited {
+.footer a {
     text-decoration: none;
 }
 
 .button-back-to-top {
     width: 100%;
     height: 42px;
-    margin: 80px auto 0 auto;
     background-color: #F9F6E5;
     text-align: right;
     display: flex;
     justify-content: right;
     align-items: center;
-    padding-right: 156px;
+    padding-right: 150px;
 }
 
 .button-back-to-top-text {
@@ -127,27 +131,14 @@
 }
 
 @media screen and (max-width:1024px) {
-    .footer {
-        margin-top: 51px;
-    }
-
     .footer-content-text {
         max-width: 800px;
-        padding: 156px 10px 0 43px;
         font-size: 36px;
-    }
-
-    .footer-content-social {
-        max-width: 939px;
-        width: 90%;
+        padding-left: 0;
     }
 
     .social-item {
         padding-top: 23px;
-    }
-
-    .footer-content-widgets {
-        margin-top: 57px;
     }
 
     .widgets-item-title {
@@ -160,31 +151,24 @@
     }
 
     .button-back-to-top {
-        margin-top: 95px;
         padding-right: 10px;
     }
 }
 
 @media screen and (max-width:768px) {
     .footer {
-        margin-top: 46px;
+        margin-top: 45px;
+    }
+
+    .footer-container {
+        gap: 40px;
     }
 
     .footer-content-text {
-        max-width: 690px;
-        padding: 114px 5px 0 5px;
-        margin: 0 auto;
         font-size: 32px;
     }
 
-    .footer-content-social {
-        max-width: 690px;
-        margin-top: 40px;
-    }
-
     .footer-content-widgets {
-        max-width: 640px;
-        margin-top: 69px;
         flex-wrap: wrap;
     }
 
@@ -193,31 +177,13 @@
         flex: 50%;
         padding-top: 35px;
     }
-
-    .button-back-to-top {
-        margin-top: 33px;
-    }
 }
 
 @media screen and (max-width:640px) {
-    .footer {
-        margin-top: 51px;
-    }
 
     .footer-content-text {
-        max-width: 547px;
-        padding: 84px 5px 0 5px;
         font-size: 24px;
         line-height: 26px;
-    }
-
-    .footer-content-social {
-        max-width: 560px;
-    }
-
-    .footer-content-widgets {
-        max-width: 520px;
-        margin-top: 40px;
     }
 
     .widgets-item {
@@ -231,20 +197,10 @@
     .footer-content-widgets> :nth-child(4) {
         padding-left: 60px;
     }
-
-    .button-back-to-top {
-        margin-top: 125px;
-    }
 }
 
 @media screen and (max-width:639px) {
-    .footer {
-        margin-top: 85px;
-    }
-
     .footer-content-text {
-        max-width: 274px;
-        padding: 85px 5px 0 5px;
         font-size: 20px;
         line-height: 22px;
         text-align: center;
@@ -253,7 +209,6 @@
     .footer-content-social {
         max-width: 25px;
         width: 30%;
-        margin-top: 43px;
         flex-direction: column;
         border-top: none;
         border-bottom: none;
@@ -289,12 +244,11 @@
 
     .button-back-to-top {
         height: 142px;
-        margin-top: 39px;
         text-align: center;
         flex-direction: column;
     }
 
     .button-back-to-top-text {
-        padding: 56px 0 20px 0;
+        padding: 50px 0 20px 0;
     }
 }
