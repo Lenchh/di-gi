@@ -1,2 +1,1 @@
-Website (made in HTML and CSS) about the marketing company Di-Gi https://lenchh.github.io/di-gi/
-https://www.figma.com/design/3jKk6CXwnDbcXng7GNrLt2/m-web-frontend-level1?node-id=0-2&t=AfVBV7dKsNs64kUV-0
+Website (made in HTML and CSS) about the marketing company Di-Gi created based on the [design](https://www.figma.com/design/3jKk6CXwnDbcXng7GNrLt2/m-web-frontend-level1?node-id=0-2&t=AfVBV7dKsNs64kUV-0) - **https://lenchh.github.io/di-gi/**
